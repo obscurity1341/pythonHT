@@ -19,7 +19,9 @@ print(g)
 
 c = ['apple', 'pear', 'peach']
 a = ['banana', 'grape', 'cherry']
-
+for i in c:
+    a.append(i)
+print(a)
 
 
 # Задание-3:
@@ -28,3 +30,11 @@ a = ['banana', 'grape', 'cherry']
 # + Элемент кратен 3
 # + Элемент положительный
 # + Элемент не кратен 4
+
+numbers = [-12, -17, -3, 0, 1, 2, 3, 4, 6, 9, 12, 45]
+new_numbers = []
+for i in numbers:
+    if i % 3 == 0 and i > 0 and i % 4 != 0:
+        new_numbers.append(i)
+
+print(new_numbers)
